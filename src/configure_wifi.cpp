@@ -4,8 +4,8 @@ esp_err_t esp32_deauther_configure_wifi(uint8_t channel) {
     wifi_config_t ap_config = {
         .ap = {
             .ssid = "teapot",
+            .password = "12345678",
             .ssid_len = 22,
-            .password = "coffe",
             .channel = channel,
             .authmode = WIFI_AUTH_WPA2_PSK,
             .ssid_hidden = 0,
